@@ -91,7 +91,7 @@ tl.to("#p1>h1",{
 
 var tl1 = gsap.timeline({
     scrollTrigger:{
-        trigger:`#page2`,
+        trigger:`#p2`,
         start:`top top`,
         scrub:1,
         scroller:`#main`,
@@ -100,7 +100,7 @@ var tl1 = gsap.timeline({
 })
 
 
-tl1.to("#page2>h1",{
+tl1.to("#p2>h1",{
     top:`-50%`
 })
 
@@ -109,7 +109,7 @@ tl1.to("#page2>h1",{
 
 var tl2 = gsap.timeline({
     scrollTrigger:{
-        trigger:`#page4`,
+        trigger:`#p4`,
         start:`top top`,
         scrub:1,
         scroller:`#main`,
@@ -118,14 +118,14 @@ var tl2 = gsap.timeline({
 })
 
 
-tl2.to("#page4>#center-page4",{
+tl2.to("#p4>#center-p4",{
     top:`-50%`
 })
 
 
 
 function canvas(){
-    const canvas = document.querySelector("#page7>canvas");
+    const canvas = document.querySelector("#p7>canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -362,7 +362,7 @@ gsap.to(imageSeq, {
   ease: `none`,
   scrollTrigger: {
     scrub: 0.15,
-    trigger: `#page7>canvas`,
+    trigger: `#p7>canvas`,
     //   set start end according to preference
     start: `top top`,
     end: `600% top`,
@@ -399,7 +399,7 @@ function scaleImage(img, ctx) {
 }
 ScrollTrigger.create({
 
-  trigger: "#page7>canvas",
+  trigger: "#p7>canvas",
   pin: true,
   // markers:true,
   scroller: `#main`,
@@ -413,7 +413,7 @@ canvas();
 
 
 function canvas1(){
-  const canvas = document.querySelector("#page18>canvas");
+  const canvas = document.querySelector("#p18>canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -476,7 +476,7 @@ snap: "frame",
 ease: `none`,
 scrollTrigger: {
   scrub: 0.15,
-  trigger: `#page18`,
+  trigger: `#p18`,
   //   set start end according to preference
   start: `top top`,
   end: `80% top`,
@@ -513,7 +513,7 @@ ctx.drawImage(
 }
 ScrollTrigger.create({
 
-trigger: "#page18",
+trigger: "#p18",
 pin: true,
 // markers:true,
 scroller: `#main`,
@@ -528,7 +528,7 @@ canvas1();
 
 var tl3 = gsap.timeline({
   scrollTrigger:{
-      trigger:`#page21`,
+      trigger:`#p21`,
       start:`top top`,
       scrub:1,
       scroller:`#main`,
@@ -537,13 +537,13 @@ var tl3 = gsap.timeline({
 })
 
 
-tl3.to("#page21>#troff",{
+tl3.to("#p21>#troff",{
   opacity:0
 })
 
 var tl4 = gsap.timeline({
   scrollTrigger:{
-      trigger:`#page22`,
+      trigger:`#p22`,
       start:`top top`,
       scrub:1,
       scroller:`#main`,
@@ -552,15 +552,15 @@ var tl4 = gsap.timeline({
 })
 
 
-tl4.to("#page22>#snroff",{
+tl4.to("#p22>#snroff",{
   opacity:0
 })
 
 
 
-gsap.to("#page23>img",{
+gsap.to("#p23>img",{
   scrollTrigger:{
-    trigger:`#page23>img`,
+    trigger:`#p23>img`,
     start:`top bottom`,
     end:`bottom 60%`,
     scrub:.5,
